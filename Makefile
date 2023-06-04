@@ -2,7 +2,7 @@
 VENV := venv
 
 # default target, when make executed without arguments
-all: venv build docker-build
+all: venv build
 
 $(VENV)/bin/activate: requirements.txt
 	python3 -m venv $(VENV)
